@@ -32,7 +32,6 @@
             this.rbMain = new System.Windows.Forms.RichTextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbSave = new System.Windows.Forms.ToolStripButton();
-            this.tsbPrint = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbUndo = new System.Windows.Forms.ToolStripButton();
             this.tsbRedo = new System.Windows.Forms.ToolStripButton();
@@ -79,7 +78,6 @@
             this.toolStrip1.GripMargin = new System.Windows.Forms.Padding(6);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbSave,
-            this.tsbPrint,
             this.toolStripSeparator1,
             this.tsbUndo,
             this.tsbRedo,
@@ -111,18 +109,6 @@
             this.tsbSave.Name = "tsbSave";
             this.tsbSave.Size = new System.Drawing.Size(23, 29);
             this.tsbSave.Text = "save";
-            // 
-            // tsbPrint
-            // 
-            this.tsbPrint.AutoSize = false;
-            this.tsbPrint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbPrint.Image = ((System.Drawing.Image)(resources.GetObject("tsbPrint.Image")));
-            this.tsbPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbPrint.Name = "tsbPrint";
-            this.tsbPrint.Size = new System.Drawing.Size(32, 32);
-            this.tsbPrint.Text = "print";
-            this.tsbPrint.Visible = false;
-            this.tsbPrint.Click += new System.EventHandler(this.tsbPrint_Click);
             // 
             // toolStripSeparator1
             // 
@@ -357,7 +343,6 @@
         private System.Windows.Forms.RichTextBox rbMain;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbSave;
-        private System.Windows.Forms.ToolStripButton tsbPrint;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton tsbBold;
         private System.Windows.Forms.ToolStripButton tsbItalic;
