@@ -109,6 +109,7 @@
             this.tsbSave.Name = "tsbSave";
             this.tsbSave.Size = new System.Drawing.Size(23, 29);
             this.tsbSave.Text = "save";
+            this.tsbSave.Click += new System.EventHandler(this.tsbSave_Click);
             // 
             // toolStripSeparator1
             // 

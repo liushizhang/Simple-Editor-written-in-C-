@@ -360,6 +360,22 @@ namespace SimpleEditorLib
         }
         #endregion
 
+        #region Save
+        public event EventHandler<EventArgs> ToSaveDoc;
+        protected void OnToSaveDoc(EventArgs e)
+        {
+            if (ToSaveDoc != null)
+            {
+                ToSaveDoc(this, e);
+            }
+        }
+
+        private void tsbSave_Click(object sender, EventArgs e)
+        {
+            this.OnToSaveDoc(new EventArgs());
+        }
+        #endregion
+
         private void rbMain_SelectionChanged(object sender, EventArgs e)
         {
             int startIdx = rbMain.SelectionStart;
