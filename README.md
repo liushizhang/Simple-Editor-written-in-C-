@@ -1,0 +1,1 @@
+This is a very simple rich text editor coded with c#. it can load rtf and pdf file contents, supports various functions including bolding texts, italic character effect, underlining, font change, charater size change, inline texts, highlights and adding simple notes. The main purpose is for C# programing practice.
